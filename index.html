@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Smart Travel Assistant ✈️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🌍 Smart Travel Assistant ✈️</h1>
+    </header>
+    
+    <div class="container">
+        <section id="destination-section">
+            <input type="text" id="destination-input" placeholder="🏙️ Enter a city or country...">
+            <button onclick="fetchTravelInfo()">🔍 Find Places</button>
+        </section>
+        <section id="places">
+            <h2>🏆 Top Attractions</h2>
+            <ul id="places-list"></ul>
+        </section>
+        <section id="map-section">
+            <h2>🗺️ Location Map</h2>
+            <div id="map"></div>
+        </section>
+        <section id="weather-section">
+            <h2>⛅ Weather Forecast</h2>
+            <p><strong>Current Weather: </strong>🌡️ <span id="weather-output"></span></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
